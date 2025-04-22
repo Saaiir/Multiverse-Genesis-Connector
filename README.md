@@ -1,6 +1,6 @@
 # Multiverse-Genesis-Connector
 
-## Installation
+## Installation Guide
 
 ```bash
 
