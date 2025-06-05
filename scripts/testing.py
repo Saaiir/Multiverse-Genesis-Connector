@@ -56,8 +56,8 @@ class Robot:
         first_link_name = link_names[1]
         index_of_first_link = link_names.index(first_link_name)
 
-        all_positions = self.entity.get_links_pos()  # (num_links, 3)
-        all_orientations = self.entity.get_links_quat()  # (num_links, 4)
+        all_positions = self.entity.get_links_pos()  # (3 values)
+        all_orientations = self.entity.get_links_quat()  # (4 values)
         position = all_positions[index_of_first_link]
         orientation = all_orientations[index_of_first_link]
         pose = torch.cat((position, orientation), dim=0)
